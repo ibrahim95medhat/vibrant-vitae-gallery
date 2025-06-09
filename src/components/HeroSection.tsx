@@ -51,7 +51,7 @@ const HeroSection = () => {
               <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/20 to-purple-500/20 p-1 animate-scale-in">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    src="/lovable-uploads/afd8f94d-21cd-4c92-a6ed-be14c935e853.png"
                     alt="Profile"
                     className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-500"
                   />
