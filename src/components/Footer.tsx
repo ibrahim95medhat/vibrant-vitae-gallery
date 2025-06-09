@@ -21,13 +21,13 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <a 
-                href="mailto:your.email@example.com"
+                href="mailto:ibrahimmedhatad@gmail.com"
                 className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
               >
                 <Mail size={20} />
               </a>
               <a 
-                href="https://github.com/yourusername"
+                href="https://github.com/ibrahim95medhat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -35,7 +35,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/ibrahim-medhat-27ba98168/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -43,7 +43,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://wa.me/1234567890"
+                href="https://wa.me/201012323917"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"

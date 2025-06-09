@@ -60,7 +60,7 @@ const Contact = () => {
             {/* Contact Methods */}
             <div className="space-y-6">
               <a 
-                href="mailto:your.email@example.com"
+                href="mailto:ibrahimmedhatad@gmail.com"
                 className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -68,12 +68,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold group-hover:text-primary transition-colors">Email</h3>
-                  <p className="text-muted-foreground">your.email@example.com</p>
+                  <p className="text-muted-foreground">ibrahimmedhatad@gmail.com</p>
                 </div>
               </a>
 
               <a 
-                href="https://github.com/yourusername"
+                href="https://github.com/ibrahim95medhat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
@@ -83,12 +83,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold group-hover:text-primary transition-colors">GitHub</h3>
-                  <p className="text-muted-foreground">@yourusername</p>
+                  <p className="text-muted-foreground">@ibrahim95medhat</p>
                 </div>
               </a>
 
               <a 
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/ibrahim-medhat-27ba98168/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
@@ -98,12 +98,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold group-hover:text-primary transition-colors">LinkedIn</h3>
-                  <p className="text-muted-foreground">Your Professional Profile</p>
+                  <p className="text-muted-foreground">Ibrahim Medhat</p>
                 </div>
               </a>
 
               <a 
-                href="https://wa.me/1234567890"
+                href="https://wa.me/201012323917"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
@@ -113,7 +113,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold group-hover:text-primary transition-colors">WhatsApp</h3>
-                  <p className="text-muted-foreground">+1 (234) 567-8900</p>
+                  <p className="text-muted-foreground">+20 101 232 3917</p>
                 </div>
               </a>
             </div>
