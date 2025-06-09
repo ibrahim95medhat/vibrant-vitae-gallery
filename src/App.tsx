@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { HashRouter } from "react-router-dom";
 
 const queryClient = new QueryClient();
 
@@ -16,14 +17,14 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/project/:projectId" element={<ProjectDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
