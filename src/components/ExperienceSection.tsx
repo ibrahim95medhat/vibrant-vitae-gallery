@@ -34,7 +34,7 @@ const ExperienceSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Over 2 years of professional frontend development experience with industry-recognized certifications
+            Over 3 years of professional frontend development experience with industry-recognized certifications
           </p>
         </div>
 
@@ -49,6 +49,25 @@ const ExperienceSection = () => {
             <div className="relative">
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-primary/30"></div>
               
+              {/* Areeb Experience */}
+              <div className="relative pl-12 pb-8">
+                <div className="absolute left-2 top-2 w-4 h-4 bg-primary rounded-full"></div>
+                <div className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
+                  <h4 className="text-xl font-semibold mb-2">Frontend Developer</h4>
+                  <p className="text-muted-foreground mb-2 flex items-center gap-2">
+                    <MapPin size={16} />
+                    Areeb
+                  </p>
+                  <p className="text-sm text-muted-foreground mb-4">2023 - 2025 • 2 years</p>
+                  <p className="text-muted-foreground">
+                    Developed modern web applications using Angular, React, and cutting-edge frontend technologies. 
+                    Collaborated with cross-functional teams to deliver high-quality user experiences and 
+                    contributed to multiple successful projects including e-commerce platforms and business solutions.
+                  </p>
+                </div>
+              </div>
+
+              {/* Remote Experience */}
               <div className="relative pl-12 pb-8">
                 <div className="absolute left-2 top-2 w-4 h-4 bg-primary rounded-full"></div>
                 <div className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
@@ -57,11 +76,11 @@ const ExperienceSection = () => {
                     <MapPin size={16} />
                     Remote / Freelance
                   </p>
-                  <p className="text-sm text-muted-foreground mb-4">2022 - Present • 2+ years</p>
+                  <p className="text-sm text-muted-foreground mb-4">2022 - 2023 • 1 year</p>
                   <p className="text-muted-foreground">
-                    Specialized in creating responsive, user-friendly web applications using Angular, React, 
-                    and modern CSS frameworks. Delivered multiple successful projects including e-commerce 
-                    platforms and business websites.
+                    Started my professional journey as a remote frontend developer, working on various projects 
+                    including responsive web applications, landing pages, and user interfaces. Gained experience 
+                    with modern frameworks and established strong foundations in web development best practices.
                   </p>
                 </div>
               </div>
