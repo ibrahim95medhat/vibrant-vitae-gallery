@@ -25,6 +25,6 @@ export const getCv = async () => {
 };
 
 export const postForm = async (form:unknown) => {
-  const response = await axios(`${baseUrl}`);
+  const response = await axios.post(`${baseUrl}/api/forms`);
   console.log(response);
 };
