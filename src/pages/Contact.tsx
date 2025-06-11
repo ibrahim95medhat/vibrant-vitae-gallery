@@ -15,6 +15,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success('Message sent successfully! I\'ll get back to you soon.');
+    console.log(formData);
+    
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 

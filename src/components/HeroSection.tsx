@@ -1,9 +1,38 @@
 
-import React from 'react';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import portfolio from '../assets/1709967482660.jpeg'
+import { getCv, postForm } from '../services/services';
+import { useEffect } from 'react';
 
 const HeroSection = () => {
+
+  useEffect(() => {
+    const test = async () => {
+      await postForm({ form: {} });
+    }
+
+    test();
+  }, []);
+
+  async function download() {
+    try {
+      const response = await getCv();
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = 'ibrahim_resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      window.URL.revokeObjectURL(blobUrl);
+    } catch (err) {
+      console.error("Download failed:", err);
+    }
+
+  }
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background */}
@@ -39,8 +68,8 @@ const HeroSection = () => {
                 View My Work
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="border border-border px-8 py-4 rounded-full hover:bg-accent transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
-                <Download size={20} />
+              <button onClick={download} className="border border-border px-8 py-4 rounded-full hover:bg-accent transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+                {/* <Download size={20} /> */}
                 Download CV
               </button>
             </div>
