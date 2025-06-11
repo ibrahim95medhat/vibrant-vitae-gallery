@@ -1,6 +1,5 @@
 import axios from "axios";
 const baseUrl = "https://fortunate-art-a076497b9b.strapiapp.com/api/";
-// https://fortunate-art-a076497b9b.strapiapp.com/api/resume?populate=*
 export const getCv = async () => {
   try {
     const {
@@ -24,7 +23,11 @@ export const getCv = async () => {
   }
 };
 
-export const postForm = async (form:unknown) => {
-  const response = await axios.post(`${baseUrl}/api/forms`);
+export const postForm = async (form: unknown) => {
+  const response = await axios.post(`${baseUrl}forms`, {
+    data: {
+      form,
+    },
+  });
   console.log(response);
 };

@@ -1,19 +1,9 @@
 
 import { ArrowRight } from 'lucide-react';
 import portfolio from '../assets/1709967482660.jpeg'
-import { getCv, postForm } from '../services/services';
-import { useEffect } from 'react';
+import { getCv } from '../services/services';
 
 const HeroSection = () => {
-
-  useEffect(() => {
-    const test = async () => {
-      await postForm({ form: {} });
-    }
-
-    test();
-  }, []);
-
   async function download() {
     try {
       const response = await getCv();

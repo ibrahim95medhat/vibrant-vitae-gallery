@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Mail, Github, Linkedin, MessageCircle, Send, MapPin, Phone } from 'lucide-react';
 import { toast } from 'sonner';
+import { postForm } from '@/services/services';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,11 +13,17 @@ const Contact = () => {
     message: ''
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function addForm(formData:any){
+    await postForm(formData)
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success('Message sent successfully! I\'ll get back to you soon.');
     console.log(formData);
-    
+    addForm(formData);
+
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -32,8 +39,8 @@ const Contact = () => {
       {/* Header */}
       <header className="bg-card border-b border-border">
         <div className="container mx-auto px-4 py-6">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-4"
           >
             <ArrowLeft size={20} />
@@ -53,15 +60,15 @@ const Contact = () => {
             <div>
               <h2 className="text-2xl font-bold mb-6">Let's Connect</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                I'm always excited to work on new projects and collaborate with amazing people. 
-                Whether you have a project in mind or just want to chat about frontend development, 
+                I'm always excited to work on new projects and collaborate with amazing people.
+                Whether you have a project in mind or just want to chat about frontend development,
                 feel free to reach out!
               </p>
             </div>
 
             {/* Contact Methods */}
             <div className="space-y-6">
-              <a 
+              <a
                 href="mailto:your.email@example.com"
                 className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
               >
@@ -74,7 +81,7 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a 
+              <a
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -89,7 +96,7 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a 
+              <a
                 href="https://linkedin.com/in/yourprofile"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,7 +111,7 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a 
+              <a
                 href="https://wa.me/1234567890"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -147,7 +154,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-card p-8 rounded-lg border border-border">
             <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
