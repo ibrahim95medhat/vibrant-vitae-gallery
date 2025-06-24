@@ -10,7 +10,8 @@ const projects = [
     description: 'Modern e-commerce platform with advanced features and responsive design',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
     tech: ['Angular', 'TypeScript', 'SASS', 'PrimeNG'],
-    category: 'E-commerce'
+    category: 'E-commerce',
+    url: 'https://app.cadaa.com.sa/auth'
   },
   {
     id: 'areeb',
@@ -18,7 +19,8 @@ const projects = [
     description: 'Professional business website with modern UI/UX and smooth animations',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
     tech: ['React', 'Tailwind CSS', 'Framer Motion'],
-    category: 'Business'
+    category: 'Business',
+    url: 'https://www.areebtechnology.com/'
   },
   {
     id: 'contraa',
@@ -26,7 +28,8 @@ const projects = [
     description: 'Comprehensive project management solution with real-time collaboration',
     image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
     tech: ['Angular', 'TypeScript', 'Bootstrap', 'NX'],
-    category: 'SaaS'
+    category: 'SaaS',
+    url: ''
   }
 ];
 
@@ -74,10 +77,12 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
             View Details
             <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
           </Link>
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
           <button className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-            <ExternalLink size={16} />
+              <ExternalLink size={16} />
             Live Demo
           </button>
+            </a>
         </div>
       </div>
     </div>
